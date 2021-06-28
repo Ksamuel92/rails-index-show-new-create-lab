@@ -1,0 +1,6 @@
+
+<h2> This is the index page</h2>
+<ul>
+<% @coupons.each do |coupon|%>
+<%=link_to "#{coupon.to_s}", coupon_path(coupon)%>
+<% end %>
